@@ -16,8 +16,8 @@ async function bootstrap() {
     .addBearerAuth()
     .addTag('shizen-todo')
     .build();
+    
   const document = SwaggerModule.createDocument(app, config);
-
   SwaggerModule.setup('/swagger', app, document, {
     customCssUrl:
       'https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.15.5/swagger-ui.min.css',
